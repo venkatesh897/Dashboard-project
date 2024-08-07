@@ -25,7 +25,7 @@ const NetProfitStats = ({ title, totalRevenue, icon, percentage,signOfPercentage
                         
             {signOfPercentage =="profit" && 
 
-                <Box >
+                <Box display="flex" alignItems="center" m="2px">
 
 
                         <Typography variant="h8" sx={{ color: colors.greenAccent[500] }} fontWeight="bold"> 
@@ -46,7 +46,7 @@ const NetProfitStats = ({ title, totalRevenue, icon, percentage,signOfPercentage
 
             {signOfPercentage =="loss" && 
 
-                <Box >
+                <Box display="flex" alignItems="center" m="2px">
 
 
                         <Typography variant="h8" sx={{ color: colors.redAccent[500] }} fontWeight="bold"> 

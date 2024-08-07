@@ -23,7 +23,7 @@ const StatBox = ({ title, orderQunatity, icon, percentage,statusOfPercentage }) 
        
       </Box>
       <Box display="flex" justifyContent="space-between"  alignItems="center">
-        <Typography variant="h4" sx={{ color: colors.grey[100] }} fontWeight="bold"> 
+        <Typography variant="h2" sx={{ color: colors.grey[100] }} fontWeight="bold"> 
           {orderQunatity}
         </Typography>
 

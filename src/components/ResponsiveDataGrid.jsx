@@ -19,11 +19,21 @@ const CustomDataGrid = styled(DataGrid)(({ theme }) => ({
 
 const ResponsiveDataGrid = ({ rows, columns }) => {
     const theme = useTheme();
+    const isextraSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
     const isMediumScreen = useMediaQuery(theme.breakpoints.between('sm', 'md'));
+    const isNotResponsive = useMediaQuery('(min-width:450px) and (max-width:601px)');
+  
+    
   
     const getGridSize = () => {
-      if (isSmallScreen) {
+      if (isNotResponsive){
+        return {
+          height: 'auto',
+          width: '350px',
+        };
+      }
+      if (isextraSmallScreen) {
         return {
           height: 'auto',
           width: '250px',

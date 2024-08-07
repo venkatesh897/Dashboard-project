@@ -50,7 +50,7 @@ const ReviewList = () => {
       <Typography variant="h4" gutterBottom>
         Customer's Feedback
       </Typography>
-      <Paper style={{ maxHeight: 200, overflow: 'auto' }} >
+      <Paper style={{ maxHeight: 200, overflow: 'auto' }} sx={{backgroundColor: colors.primary[400]}}>
         <List >
           {feedbacks.map((item, index) => (
             <ListItem key={index} alignItems="flex-start" sx={{ backgroundColor: colors.primary[400], borderRadius: 1 }}>
